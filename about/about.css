@@ -1,0 +1,104 @@
+
+.about-section-text {
+    text-align: center;
+    padding: var(--padding-height) 30px 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-img-slider-container {
+    height: var(--section-height-one);
+    width: 100vw;
+    background: url('about_assets/01.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.about-img-slider {
+    height: 100%;
+    width: 100%;
+    animation: about-img-slider calc(var(--animation-duration-two) * 3) linear infinite;
+}
+@keyframes about-img-slider {
+    0% {
+        background: url('about_assets/01.jpg');
+        background-size: cover;
+        background-position: center;
+    } 23.33% {
+        background: url('about_assets/01.jpg');
+        background-size: cover;
+        background-position: center;
+    } 33.33% {
+        background: url('about_assets/02.jpg');
+        background-size: cover;
+        background-position: center;
+    } 56.66% {
+        background: url('about_assets/02.jpg');
+        background-size: cover;
+        background-position: center;
+    } 66.66% {
+        background: url('about_assets/03.jpg');
+        background-size: cover;
+        background-position: center;
+    } 89.99% {
+        background: url('about_assets/03.jpg');
+        background-size: cover;
+        background-position: center;
+    } 100% {
+        background: url('about_assets/01.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+.inspiration-section-text {
+    text-align: center;
+    padding: var(--padding-height) 30px 5vh;
+}
+.photo-gallery-container {
+    margin: 0px 20px calc(6vh - 20px);
+    display: flex;
+}
+.photo-gallery-column {
+    display: flex;
+    flex: 1;
+}
+.photo-gallery-subcolumn {
+    padding: 0px 10px;
+    flex: 1;
+}
+.photo-gallery-subcolumn img {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 1280px) {
+    .photo-gallery-container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px) {
+    .photo-gallery-column {
+        flex-direction: column;
+    }
+} 
+@media all and (max-width: 690px) {
+    .about-img-slider-container {
+        height: var(--section-height-one-mobile);
+    }
+}
+@media all and (max-width: 360px) {
+    .about-section-text, .inspiration-section-text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .photo-gallery-container {
+        margin: 30px 15px 25px;
+    }
+    .photo-gallery-subcolumn {
+        padding: 0px;
+    }
+    .photo-gallery-subcolumn img {
+        margin-bottom: 15px;
+    }
+}

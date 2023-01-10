@@ -1,0 +1,122 @@
+
+.video {
+    min-height: var(--section-height-two);
+    min-width: 100vw;
+    position: fixed;
+    top: var(--top-menu-height);
+    z-index: -1;
+}
+
+
+.project-one, .project-two-img-slider, .project-three {
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-one {
+    height: var(--section-height-one);
+}
+.project-two {
+    height: 100vh;
+    background: url('projects_assets/01.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.project-three {
+    height: 100vh;
+}
+.project-content {
+    text-align: center;
+    padding: var(--padding-height) 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text-tertiary span {
+    color: var(--green-five);
+}
+.project-two-img-slider {
+    height: 100%;
+    width: 100%;
+    animation: project-img-slider calc(var(--animation-duration-two) * 5) linear infinite;
+}
+@keyframes project-img-slider {
+    0% {
+        background: url('projects_assets/01.jpg');
+        background-size: cover;
+        background-position: center;
+    } 14% {
+        background: url('projects_assets/01.jpg');
+        background-size: cover;
+        background-position: center;
+    } 20% {
+        background: url('projects_assets/02.jpg');
+        background-size: cover;
+        background-position: center;
+    } 34% {
+        background: url('projects_assets/02.jpg');
+        background-size: cover;
+        background-position: center;
+    } 40% {
+        background: url('projects_assets/03.jpg');
+        background-size: cover;
+        background-position: center;
+    } 54% {
+        background: url('projects_assets/03.jpg');
+        background-size: cover;
+        background-position: center;
+    } 60% {
+        background: url('projects_assets/04.jpg');
+        background-size: cover;
+        background-position: center;
+    } 74% {
+        background: url('projects_assets/04.jpg');
+        background-size: cover;
+        background-position: center;
+    } 80% {
+        background: url('projects_assets/05.jpg');
+        background-size: cover;
+        background-position: center;
+    } 94% {
+        background: url('projects_assets/05.jpg');
+        background-size: cover;
+        background-position: center;
+    } 100% {
+        background: url('projects_assets/01.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+@media all and (max-width: 690px) {
+    .video {
+        top: var(--promos-container-height);
+    }
+    .project-one {
+        height: var(--section-height-one-mobile);
+    }
+}
+@media all and (max-width: 412px) {
+    .text-secondary {
+        font-size: 16px;
+    }
+}
+@media all and (max-width: 390px) {
+    .heading-primary {
+        font-size: 22px;
+    }
+}
+@media all and (max-width: 375px) {
+    .project-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media all and (max-width: 310px) {
+    .text-secondary {
+        font-size: 15px;
+    }
+}
