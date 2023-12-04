@@ -45,11 +45,11 @@ ins {
 }
 .product-images a:hover img:nth-child(1) {
     height: 0%;
-    transition-delay: var(--animation-duration-three);
+    transition-delay: var(--animation-duration-two);
 }
 .product-images a:hover img:nth-child(2) {
     height: 100%;
-    animation: fade-in var(--animation-duration-three);
+    animation: fade-in var(--animation-duration-two);
 }
 .product-container p {
     font-size: 14px;
@@ -80,7 +80,7 @@ ins {
     width: 57.5%;
     position: relative;
     overflow: hidden;
-    transition: all var(--animation-duration-three);
+    transition: all var(--animation-duration-two);
     z-index: 0;
 }
 .order-btn:before , .order-btn:after {
@@ -91,7 +91,7 @@ ins {
     left: 0;
     right: 0;
     top: 0;
-    transition: var(--animation-duration-three);
+    transition: var(--animation-duration-two);
     z-index: -1;
 }
 .order-btn:before {

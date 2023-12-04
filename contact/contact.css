@@ -1,356 +1,397 @@
-
-.sb-section, .cf-section, .of-section, .rsi-section {
-    padding: 0px 30px;
+.sb-section,
+.cf-section,
+.of-section,
+.rsi-section {
+	padding: 0px 30px;
 }
-
 
 .clip-container {
-    background: url('contact_assets/01.jpg');
-    background-position: center; 
-    background-size: cover;
-    height: 35vh;
-    width: 100%;
-    position: relative;
+	background: url('contact_assets/01.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 35vh;
+	width: 100%;
+	position: relative;
 }
 .clip {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: all 0.5s;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.5s;
 }
 .clip-one {
-    background: url('contact_assets/01.jpg');
-    background-position: center; 
-    background-size: cover;
-    clip-path: polygon(0 0, 17% 0, 49% 100%, 0% 100%);
+	background: url('contact_assets/01.jpg');
+	background-position: center;
+	background-size: cover;
+	clip-path: polygon(0 0, 17% 0, 49% 100%, 0% 100%);
 }
 .clip-two {
-    background: url('contact_assets/02.jpg');
-    background-position: center; 
-    background-size: cover;
-    clip-path: polygon(13% 0, 81% 0, 59% 100%, 36% 100%);
+	background: url('contact_assets/02.jpg');
+	background-position: center;
+	background-size: cover;
+	clip-path: polygon(13% 0, 81% 0, 59% 100%, 36% 100%);
 }
 .clip-three {
-    background: url('contact_assets/03.jpg');
-    background-position: center; 
-    background-size: cover;
-    clip-path: polygon(79% 0, 100% 0, 100% 100%, 59% 100%);
+	background: url('contact_assets/03.jpg');
+	background-position: center;
+	background-size: cover;
+	clip-path: polygon(79% 0, 100% 0, 100% 100%, 59% 100%);
 }
 .clip-container:hover .clip {
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
 .clip-container .clip:hover {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
-
-
 .info-container {
-    padding-top: var(--padding-height);
-    width: 100%;
-    display: flex;
+	padding-top: var(--padding-height);
+	width: 100%;
+	display: flex;
 }
 .info-text {
-    text-align: right;
-    flex: 1;
+	text-align: right;
+	flex: 1;
 }
 .info-card {
-    background-color: var(--green-two);
-    border-radius: 10px;
-    margin: 0px 0px 0px 15px;
-    padding: 8px;
-    flex: 1;
-    clip-path: circle(20px at 22px 22px);
-    transition: all 0.5s;
+	background-color: var(--green-two);
+	border-radius: 10px;
+	margin: 0px 0px 0px 15px;
+	padding: 8px;
+	flex: 1;
+	clip-path: circle(20px at 22px 22px);
+	transition: all 0.5s;
 }
 .info-card p {
-    margin: 7px;
+	margin: 7px;
 }
 .info-icon {
-    color: var(--white);
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    position: relative;
+	color: var(--white);
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	position: relative;
 }
-.info-icon:before, .info-icon:after {
-    border: 1px solid var(--white);
-    border-radius: 50%;
-    position: absolute;
-    content: '';
-    bottom: -7px;
-    left: -7px;
-    right: -7px;
-    top: -7px;
-    animation: icon-pulsing 1.5s linear infinite;
+.info-icon:before,
+.info-icon:after {
+	border: 1px solid var(--white);
+	border-radius: 50%;
+	position: absolute;
+	content: '';
+	bottom: -7px;
+	left: -7px;
+	right: -7px;
+	top: -7px;
+	animation: icon-pulsing 1.5s linear infinite;
 }
 @keyframes icon-pulsing {
-    0% {
-        transform: scale(0.5);
-        opacity: 0;
-    } 50% {
-        transform: scale(1);
-        opacity: 1;
-    } 100% {
-        transform: scale(1.1);
-        opacity: 0;
-    }
+	0% {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.1);
+		opacity: 0;
+	}
 }
 .info-icon:after {
-    animation-delay: 0.5s;
+	animation-delay: 0.5s;
 }
 .info-card:hover {
-    clip-path: circle(70.7% at 50% 50%);
+	clip-path: circle(70.7% at 50% 50%);
 }
-
 
 fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
+	border: none;
+	margin: 0;
+	padding: 0;
 }
 legend {
-    text-align: center;
-    padding: 30px 0px;
+	text-align: center;
+	padding: 30px 0px;
 }
 .subscription-form {
-    width: 100%;
-    display: flex;
+	width: 100%;
+	display: flex;
 }
 .subscription-form fieldset {
-    width: 84%;
-    display: flex;
+	width: 84%;
+	display: flex;
 }
 .sf-container-one {
-    width: 30%;
+	width: 30%;
 }
 .sf-container-two {
-    width: 40%;
+	width: 40%;
 }
 .sf-btn-container {
-    width: 16%;
+	width: 16%;
 }
 .subscription-form div {
-    margin-bottom: 0.5vh;
-    margin-top: 0.5vh;
-    display: flex;
+	margin-bottom: 0.5vh;
+	margin-top: 0.5vh;
+	display: flex;
 }
-.contact-form div, 
+.contact-form div,
 .order-form div {
-    margin: 0.5vh auto;
-    width: 50%;
-    display: flex;
+	margin: 0.5vh auto;
+	width: 50%;
+	display: flex;
 }
-.subscription-form div label, 
-.contact-form div label, 
-.of-contact-info div label, .of-flowers div label, .of-details label {
-    text-transform: capitalize;
-    line-height: 5vh;
-    min-width: fit-content;
-    padding: 0% 5% 0% 5%;
+.subscription-form div label,
+.contact-form div label,
+.of-contact-info div label,
+.of-flowers div label,
+.of-details label {
+	text-transform: capitalize;
+	line-height: 5vh;
+	min-width: fit-content;
+	padding: 0% 5% 0% 5%;
 }
 .subscription-form div label {
-    text-align: right;
+	text-align: right;
 }
-.contact-form div label, 
-.of-contact-info div label, .of-details label {
-    text-align: right;
-    flex: 0.3;
+.contact-form div label,
+.of-contact-info div label,
+.of-details label {
+	text-align: right;
+	flex: 0.3;
 }
 .of-flowers div label {
-    text-align: left;
-    flex: 1;
+	text-align: left;
+	flex: 1;
 }
-#of-gift-wrap-label, #of-gift-note-label {
-    width: 70%;
+#of-gift-wrap-label,
+#of-gift-note-label {
+	width: 70%;
 }
 .of-flowers div label span {
-    color: var(--green-five);
-    font-size: 15px;
+	color: var(--green-five);
+	font-size: 15px;
 }
 .of-flowers div label strong {
-    color: var(--black);
+	color: var(--black);
 }
-.subscription-form div input, 
-.contact-form div input, .contact-form div select, .contact-form div textarea,
-.of-contact-info div input, #of-gift-wrap-input, #of-gift-note-input, .of-btn-container input, 
-.of-contact-info div select, .of-flowers div select, 
+.subscription-form div input,
+.contact-form div input,
+.contact-form div select,
+.contact-form div textarea,
+.of-contact-info div input,
+#of-gift-wrap-input,
+#of-gift-note-input,
+.of-btn-container input,
+.of-contact-info div select,
+.of-flowers div select,
 .of-details textarea {
-    border: none;
-    min-height: 5vh;
+	border: none;
+	min-height: 5vh;
 }
-.subscription-form div input, 
-.contact-form div input, .contact-form div select, .contact-form div textarea,
-.of-contact-info div input, .of-btn-container input,
-.of-contact-info div select, 
+.subscription-form div input,
+.contact-form div input,
+.contact-form div select,
+.contact-form div textarea,
+.of-contact-info div input,
+.of-btn-container input,
+.of-contact-info div select,
 .of-details textarea {
-    flex: 1;
+	flex: 1;
 }
-#of-gift-wrap-input, #of-gift-note-input {
-    width: 30%;
+#of-gift-wrap-input,
+#of-gift-note-input {
+	accent-color: var(--green-two);
+	width: 30%;
 }
 .of-flowers div select {
-    flex: 0.3;
+	flex: 0.3;
 }
 .contact-form div select,
-.of-contact-info div select, .of-flowers div select {
-    color: var(--green-three);
-    text-align: center;
+.of-contact-info div select,
+.of-flowers div select {
+	color: var(--green-three);
+	text-align: center;
 }
-.form-btn-one, .form-btn-two {
-    background-color: var(--green-two);
-    cursor: pointer;
-    font-size: 15px;
+.contact-form div select option,
+.of-contact-info div select option,
+.of-flowers div select option {
+	text-align: center;
+}
+.form-btn-one,
+.form-btn-two {
+	background-color: var(--green-two);
+	cursor: pointer;
+	font-size: 15px;
 }
 .form-btn-one {
-    margin-left: 1.5vw;
+	margin-left: 1.5vw;
 }
 .form-btn-two {
-    margin-top: 0.5vh;
+	margin-top: 0.5vh;
 }
-.form-btn-one:hover, .form-btn-two:hover {
-    color: var(--white);
+.form-btn-one:hover,
+.form-btn-two:hover {
+	color: var(--white);
 }
 .required {
-    color: var(--green-five);
-    padding: 0px 1px;
+	color: var(--green-five);
+	padding: 0px 1px;
 }
 .sub-heading {
-    padding: 18px 0px;
+	padding: 18px 0px;
 }
-
 
 .store-info-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;   
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
 }
 .store-info-list {
-    margin: 0px;
+	margin: 0px;
 }
 .store-info-list li {
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    margin-bottom: 10px;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	margin-bottom: 10px;
 }
 .store-info-list li:nth-child(1) {
-    color: var(--green-four);
-    font-size: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+	color: var(--green-four);
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
-
 
 .location {
-    height: 35vh;
-    margin: 6vh 0vw;
-    width: 100%;
+	height: 35vh;
+	margin: 6vh 0vw;
+	width: 100%;
 }
 .location iframe {
-    border: none;
-    filter:grayscale(1);
-    height: 100%;
-    width: 100%
+	border: none;
+	filter: grayscale(1);
+	height: 100%;
+	width: 100%;
 }
-
 
 @media all and (max-width: 1340px) {
-    .of-flowers div {
-        width: 60%;
-    }
+	.of-flowers div {
+		width: 60%;
+	}
 }
 @media all and (max-width: 1140px) {
-    .subscription-form, .subscription-form fieldset {
-        width: 100%;
-        flex-direction: column;
-    }
-    .subscription-form div {
-        margin: 0.5vh auto;
-        width: 50%;
-    }
-    .order-form div {
-        width: 60%;
-    }
-    .of-flowers div {
-        width: 75%;
-    }
-    .subscription-form div label {
-        flex: 0.3;
-    }
-    .form-btn-one {
-        font-size: 14px;
-        margin-left: 0vw;
-        margin-top: 0.5vh;
-    }
+	.subscription-form,
+	.subscription-form fieldset {
+		width: 100%;
+		flex-direction: column;
+	}
+	.subscription-form div {
+		margin: 0.5vh auto;
+		width: 50%;
+	}
+	.order-form div {
+		width: 60%;
+	}
+	.of-flowers div {
+		width: 75%;
+	}
+	.subscription-form div label {
+		flex: 0.3;
+	}
+	.form-btn-one {
+		font-size: 14px;
+		margin-left: 0vw;
+		margin-top: 0.5vh;
+	}
 }
 @media all and (max-width: 1000px) {
-    .subscription-form div, .contact-form div, .order-form div {
-        width: 70%;
-    }
-    .of-flowers div {
-        width: 87%;
-    }
+	.subscription-form div,
+	.contact-form div,
+	.order-form div {
+		width: 70%;
+	}
+	.of-flowers div {
+		width: 87%;
+	}
 }
 @media all and (max-width: 810px) {
-    .contact-form div, .order-form div {
-        width: 80%;
-    }
-    .of-flowers div {
-        width: 100%;
-    }
+	.info-card {
+		clip-path: circle(70.7% at 50% 50%);
+	}
+	.contact-form div,
+	.order-form div {
+		width: 80%;
+	}
+	.of-flowers div {
+		width: 100%;
+	}
 }
 @media all and (max-width: 710px) {
-    .subscription-form div, .contact-form div, .order-form div {
-        width: 100%;
-    }
-    .of-flowers fieldset div, .of-flowers div label, .store-info-container {
-        text-align: center;
-        flex-direction: column;  
-    }
-    .of-flowers div select {
-        width: 35%;
-        align-self: center;
-    }
-    .location {
-        height: 60vh;
-    }
+	.subscription-form div,
+	.contact-form div,
+	.order-form div {
+		width: 100%;
+	}
+	.of-flowers fieldset div,
+	.of-flowers div label,
+	.store-info-container {
+		text-align: center;
+		flex-direction: column;
+	}
+	.of-flowers div select {
+		width: 35%;
+		align-self: center;
+	}
+	.location {
+		height: 60vh;
+	}
 }
 @media all and (max-width: 540px) {
-    .clip-container {
-        height: 60vh;
-    }
-    .contact-form div, .of-contact-info div, .of-details div {
-        flex-direction: column;
-    }
-    #of-gift-wrap-container, #of-gift-note-container {
-        flex-direction: row;
-    }
-    .contact-form div label, .of-contact-info div label, .of-details label {
-        text-align: center;
-    }
-    .of-flowers div select {
-        width: 50%;
-    }
+	.clip-container {
+		height: 60vh;
+	}
+	.contact-form div,
+	.of-contact-info div,
+	.of-details div {
+		flex-direction: column;
+	}
+	#of-gift-wrap-container,
+	#of-gift-note-container {
+		flex-direction: row;
+	}
+	.contact-form div label,
+	.of-contact-info div label,
+	.of-details label {
+		text-align: center;
+	}
+	.of-flowers div select {
+		width: 50%;
+	}
 }
 @media all and (max-width: 470px) {
-    .of-flowers div select {
-        width: 100%;
-    }
+	.of-flowers div select {
+		width: 100%;
+	}
 }
 @media all and (max-width: 440px) {
-    .subscription-form div {
-        flex-direction: column;
-    }
-    .subscription-form div label {
-        text-align: center;
-    }
+	.subscription-form div {
+		flex-direction: column;
+	}
+	.subscription-form div label {
+		text-align: center;
+	}
 }
 @media all and (max-width: 360px) {
-    .sb-section, .cf-section, .of-section, .rsi-section {
-        padding: 0px 15px;
-    }
-    .heading-tertiary, .heading-tertiary a {
-        font-size: 16px;
-    }
+	.sb-section,
+	.cf-section,
+	.of-section,
+	.rsi-section {
+		padding: 0px 15px;
+	}
+	.heading-tertiary,
+	.heading-tertiary a {
+		font-size: 16px;
+	}
 }
