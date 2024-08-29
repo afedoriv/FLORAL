@@ -1,11 +1,6 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555)](https://www.linkedin.com/in/alina-fedoriv-89868720b/)
-
-<br />
-<br />
 <a href="https://alinafedoriv-floral.netlify.app/" target="_blank">
     <img src="https://github.com/afedoriv/FLORAL/assets/99702784/83501b11-388c-4688-95ea-07c4eac36733" alt="Logo" width="180">
 </a>
@@ -42,7 +37,7 @@
     <li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#project-links">Project Links</a></li>
   </ol>
 </details>
 
@@ -153,10 +148,9 @@ I acknowledge and thank these resources and services for their availability, whi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contact
+## Project Links
 
-Alina Fedoriv - fedoriv2023@gmail.com
-
-Project Link - [https://github.com/afedoriv/FLORAL.git](https://github.com/afedoriv/FLORAL.git)
+-   **Live Demo:** [FLORAL Website](https://alinafedoriv-floral.netlify.app/)
+-   **Project Repository:** [FLORAL Website GitHub](https://github.com/afedoriv/FLORAL)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
