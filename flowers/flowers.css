@@ -1,178 +1,203 @@
-
 ins {
-    color: var(--green-four);
-    font-weight: 400;
-    text-decoration: none;
-    padding-left: 2px;
+	color: var(--green-four);
+	font-weight: 400;
+	text-decoration: none;
+	padding-left: 2px;
 }
 
-.flowers-section-text {
-    padding: 0px 30px;
-}
-.paragraph {
-    margin: 5px 0px 0px;
+.fresh-flowers-section {
+	padding-top: 30px;
 }
 .dried-flowers-section {
-    padding-bottom: 3vh;
-    padding-top: var(--top-menu-height);
+	padding-bottom: 3vh;
+	padding-top: calc(var(--top-menu-height) + 30px);
 }
-
+.flowers-section-text {
+	padding: 0px 60px 40px;
+}
+.paragraph {
+	margin: 5px 0px 0px;
+}
 
 .all-products-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 .product-container {
-    margin: 3vh 1vw 6vh;
-    width: 24.5vw;
-    display: flex;
-    flex-direction: column;
+	margin: 3vh 1vw 6vh;
+	width: 24.5vw;
+	display: flex;
+	flex-direction: column;
 }
-.product-images, .product-single-image {
-    aspect-ratio: 4 / 6;
+.product-images,
+.product-single-image {
+	aspect-ratio: 4 / 6;
 }
 .product-images {
-    position: relative;
+	position: relative;
 }
 .product-images a img:nth-child(1) {
-    height: 100%;
-    position: absolute;
+	height: 100%;
+	position: absolute;
 }
 .product-images a img:nth-child(2) {
-    height: 0%;
-    position: absolute;
+	height: 0%;
+	position: absolute;
 }
 .product-images a:hover img:nth-child(1) {
-    height: 0%;
-    transition-delay: var(--animation-duration-two);
+	height: 0%;
+	transition-delay: var(--animation-duration-two);
 }
 .product-images a:hover img:nth-child(2) {
-    height: 100%;
-    animation: fade-in var(--animation-duration-two);
+	height: 100%;
+	animation: fade-in var(--animation-duration-two);
 }
 .product-container p {
-    font-size: 14px;
-    margin: 3px 0px;
+	font-size: 14px;
+	margin-bottom: 6px;
+	margin-top: 0px;
 }
 .product-container p.product-name {
-    color: var(--green-five);
-    font-size: 15px;
-    font-weight: 400;
-    padding-top: 6px;
+	color: var(--green-five);
+	font-size: 15px;
+	font-weight: 400;
+	padding-top: 10px;
 }
 .product-name strong {
-    color: var(--black);
-    text-transform: uppercase;
+	color: var(--black);
+	text-transform: uppercase;
 }
 .order-btn {
-    background-color: var(--lightnude);
-    border: 1px solid var(--lightpurple);
-    color: var(--white);
-    font-family: 'Baskervville', serif;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    line-height: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: auto auto 0px;
-    width: 57.5%;
-    position: relative;
-    overflow: hidden;
-    transition: all var(--animation-duration-two);
-    z-index: 0;
+	background-color: var(--lightnude);
+	border: 1px solid var(--lightpurple);
+	color: var(--white);
+	font-family: 'Baskervville', serif;
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: auto auto 0px;
+	width: 57.5%;
+	position: relative;
+	overflow: hidden;
+	transition: all var(--animation-duration-two);
+	z-index: 0;
 }
-.order-btn:before , .order-btn:after {
-    background-color: var(--green-one);
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    transition: var(--animation-duration-two);
-    z-index: -1;
+.order-btn:before,
+.order-btn:after {
+	background-color: var(--green-one);
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	transition: var(--animation-duration-two);
+	z-index: -1;
 }
 .order-btn:before {
-    transform: translateX(-113%) skewX(-45deg);
+	transform: translateX(-113%) skewX(-45deg);
 }
 .order-btn:after {
-    transform: translateX(113%) skewX(-45deg);
+	transform: translateX(113%) skewX(-45deg);
 }
-.order-btn:hover:before, .order-btn:hover:after {
-    transform: translateX(0%);
+.order-btn:hover:before,
+.order-btn:hover:after {
+	transform: translateX(0%);
 }
-
 
 @media all and (max-width: 1443px) {
-    .product-container {
-        margin: 3vh 3vw 6vh;
-        width: 28vw;
-    }
+	.product-container {
+		margin: 3vh 3vw 6vh;
+		width: 28vw;
+	}
 }
 @media all and (max-width: 1263px) {
-    .product-container {
-        margin: 3vh 1vw 6vh;
-        width: 33vw;
-    }
+	.product-container {
+		margin: 3vh 1vw 6vh;
+		width: 33vw;
+	}
 }
 @media all and (max-width: 1072px) {
-    .product-container {
-        width: 38vw;
-    }
+	.product-container {
+		width: 38vw;
+	}
 }
 @media all and (max-width: 930px) {
-    .product-container {
-        width: 44vw;
-    }
+	.flowers-section-text {
+		padding: 0px 30px 35px;
+	}
+	.product-container {
+		width: 44vw;
+	}
 }
 @media all and (max-width: 786px) {
-    .product-container {
-        width: 53vw;
-    }
+	.dried-flowers-section {
+		padding-top: calc(var(--top-menu-height) + 20px);
+	}
+	.flowers-section-text {
+		padding: 0px 45px 35px;
+	}
+	.product-container {
+		width: 53vw;
+	}
 }
 @media all and (max-width: 667px) {
-    .product-container {
-        width: 63vw;
-    }
+	.product-container {
+		width: 63vw;
+	}
 }
 @media all and (max-width: 561px) {
-    .product-container p.product-name {
-        font-size: 14px;
-    }
+	.product-container p.product-name {
+		font-size: 14px;
+	}
 }
 @media all and (max-width: 524px) {
-    .product-container {
-        width: 73vw;
-    }
+	.dried-flowers-section {
+		padding-top: var(--top-menu-height);
+	}
+	.flowers-section-text {
+		padding: 0px 30px 30px;
+	}
+	.product-container {
+		width: 73vw;
+	}
 }
 @media all and (max-width: 440px) {
-    .product-container p {
-        font-size: 12px;
-    }
-    .product-container p.product-name {
-        font-size: 13px;
-    }
+	.product-container p {
+		font-size: 12px;
+	}
+	.product-container p.product-name {
+		font-size: 13px;
+	}
 }
 @media all and (max-width: 414px) {
-    .product-container {
-        width: 80vw;
-    }
+	.product-container {
+		width: 80vw;
+	}
 }
 @media all and (max-width: 375px) {
-    .product-container {
-        width: 83vw;
-    }
-    .order-btn {
-        line-height: 45px;
-    }
+	.product-container {
+		width: 83vw;
+	}
+	.order-btn {
+		line-height: 45px;
+	}
 }
 @media all and (max-width: 320px) {
-    .product-container {
-        width: 85vw;
-    }
-    .order-btn {
-        line-height: 35px;
-    }
+	.fresh-flowers-section {
+		padding-top: 20px;
+	}
+	.flowers-section-text {
+		padding: 0px 20px 25px;
+	}
+	.product-container {
+		width: 85vw;
+	}
+	.order-btn {
+		line-height: 35px;
+	}
 }
